@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="NIT-WKS-615" name="test.java.DriverScriptTest" tests="1" failures="0" timestamp="21 Dec 2015 13:41:11 GMT" time="56.651" errors="0">
+  <testcase name="Test" time="56.556" classname="test.java.DriverScriptTest"/>
+</testsuite>

@@ -1,0 +1,24 @@
+# Home Page Objects
+btn_LogIn=.//button[contains(@class, 'btn')]
+login_Msg=//*[@id="main"]/div/div[contains(@class,'alert')]
+customer_menu=.//i[contains(@class,'fa-briefcase')]
+accounts_button=.//i[contains(@class,'fa-bank')]
+newaccount_button=.//i[contains(@class,'fa-plus-circle')]
+
+
+# Login Page Object
+txtbx_UserName=.//input[@id='user_email']
+txtbx_Password=.//input[@id='user_password']
+Btn_LogIn=//*[@id="new_user"]/div[4]/input
+error_Msg = .//div[@id='login-error-message']
+
+# New Account Object
+account_Name = .//input[@id='account_name']
+account_Address =.//input[@id='account_address_1']
+invoice_recipients =.//input[@id='account_invoice_recipients_raw']
+contacts_name = .//input[@id='account_contacts_attributes_0_name']
+contacts_email = .//input[@id='account_contacts_attributes_0_email']
+add_contact = .//input[@id='add-contact']
+create_account = //input[@value="Create Account"]
+account_town = .//input[@id='account_town']
+

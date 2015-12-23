@@ -1,0 +1,11 @@
+# Home Page Objects
+btn_LogIn=.//button[contains(@class, 'btn')]
+
+
+
+# Login Page Object
+txtbx_UserName=.//input[@name='login.username']
+txtbx_Password=.//input[@name='login.password']
+Btn_LogIn=.//button[@text='Login']
+error_Msg = .//div[@id='login-error-message']
+
