@@ -6404,3 +6404,36 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 2015-12-23 18:09:55,910 INFO  [Log] X 
 2015-12-23 18:09:55,941 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
 2015-12-23 18:09:55,941 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-23 21:45:50,907 INFO  [Log] **************************************************************************************** 
+2015-12-23 21:45:50,907 INFO  [Log] **************************************************************************************** 
+2015-12-23 21:45:50,907 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC_02       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-23 21:45:50,907 INFO  [Log] **************************************************************************************** 
+2015-12-23 21:45:50,907 INFO  [Log] **************************************************************************************** 
+2015-12-23 21:45:50,912 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-23 21:45:50,914 INFO  [Log] Opening Browser 
+2015-12-23 21:46:47,734 INFO  [Log] Mozilla browser started 
+2015-12-23 21:46:50,990 INFO  [Log] Navigating to URL 
+2015-12-23 21:47:21,648 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-23 21:47:23,173 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-23 21:47:23,832 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-23 21:47:31,479 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-23 21:47:31,480 INFO  [Log] Wait for 10 seconds 
+2015-12-23 21:47:42,023 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-23 21:47:42,499 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-23 21:47:44,593 INFO  [Log] Wait for object 
+2015-12-23 21:47:45,114 INFO  [Log] Clicking on Webelement newaccount_button 
+2015-12-23 21:47:52,794 INFO  [Log] Entering the text in account_Name 
+2015-12-23 21:47:53,999 INFO  [Log] Entering the text in account_Address 
+2015-12-23 21:47:54,701 INFO  [Log] Entering the text in account_town 
+2015-12-23 21:47:55,425 INFO  [Log] Scroll Down Page 
+2015-12-23 21:47:55,971 INFO  [Log] Scroll Down Page 
+2015-12-23 21:47:56,711 INFO  [Log] Entering the text in contacts_name 
+2015-12-23 21:47:58,377 INFO  [Log] Entering the text in contacts_email 
+2015-12-23 21:47:59,016 INFO  [Log] Clicking on Webelement create_account  
+2015-12-23 21:47:59,740 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-23 21:47:59,740 INFO  [Log] X 
+2015-12-23 21:47:59,740 INFO  [Log] X 
+2015-12-23 21:47:59,740 INFO  [Log] X 
+2015-12-23 21:47:59,740 INFO  [Log] X 
+2015-12-23 21:47:59,773 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-23 21:47:59,773 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
