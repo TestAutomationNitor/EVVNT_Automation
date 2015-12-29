@@ -19,6 +19,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -27,12 +28,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import config.Constants;
-import executionEngine.DriverScript;
-import net.mindengine.galen.api.Galen;
-import net.mindengine.galen.reports.GalenTestInfo;
-import net.mindengine.galen.reports.model.LayoutReport;
 import test.java.DriverScriptTest;
 
 public class ActionKeywords {
@@ -138,6 +136,7 @@ public class ActionKeywords {
 			
 			WebElement element = driver.findElement(By.xpath(OR.getProperty(object)));
 			element.click();
+			element.clear();
 			element.sendKeys(data);
 			path = TakeScreenshot("Input");
 			builder.DisplayResult("Pass", sDescription, "Text entered",path);
@@ -206,7 +205,8 @@ public class ActionKeywords {
 	public static String TakeScreenshot(String ImageName){
 		TakesScreenshot oScn = (TakesScreenshot) driver;
         File oScnShot = oScn.getScreenshotAs(OutputType.FILE);
-        String path = System.getProperty("user.dir")+"//Screenshot//"+ImageName+".png";
+        String path = "C:\\Screenshot\\"+ImageName+".png";
+        //String path = System.getProperty("user.dir")+"//Screenshot//"+ImageName+".png";
      File oDest = new File(path);
      try {
           FileUtils.copyFile(oScnShot, oDest);
@@ -255,6 +255,109 @@ public class ActionKeywords {
 			
 		}
 	}
+	
+	public static void clickEnter(String object, String data,String sDescription, ReportBuilder builder){
+		try {
+			Log.info("Clicking on Enter " );
+			
+			driver.findElement(By.name(OR.getProperty(object))).sendKeys(Keys.ENTER);
+			path = TakeScreenshot("Enter");
+			builder.DisplayResult("Pass", sDescription, "Enter",path);
+			
+		} catch (Exception e) {
+			Log.error("Not able to press enter key --- " + e.getMessage());
+			path = TakeScreenshot("Click");
+			builder.DisplayResult("Fail", sDescription, "Not able to press enter key --- " + e.getMessage(),path);
+			DriverScriptTest.bResult = false;
+			
+		}
+	}
 
+	public static void dropdownSelection(String object, String data,String sDescription, ReportBuilder builder){
+		try {
+			Log.info("Selecting "+ data+ " from dropdown" );
+			Select dropdown = new Select(driver.findElement(By.xpath(OR.getProperty(object))));
+			dropdown.selectByVisibleText(data);
+			path = TakeScreenshot("dropdown");
+			builder.DisplayResult("Pass", sDescription, "Value selected from dropdown",path);
+			
+		} catch (Exception e) {
+			Log.error("Not able to select value from drop down --- " + e.getMessage());
+			path = TakeScreenshot("dropdown");
+			builder.DisplayResult("Fail", sDescription, "Not able to select value from drop down ---" + e.getMessage(),path);
+			DriverScriptTest.bResult = false;
+			
+		}
+	}
+	
+	public static void verifyDisabled(String object, String data,String sDescription, ReportBuilder builder){
+		try {
+			Log.info("Verify " +object+ " disabled" );
+			WebElement element = driver.findElement(By.xpath(OR.getProperty(object)));
+			if("false" == element.getAttribute("readonly") || "false" == element.getAttribute("disabled")){
+			
+				builder.DisplayResult("Fail", sDescription, "Element is enabled",path);
+			}
+			else{
+				builder.DisplayResult("Pass", sDescription, "Disabled",path);
+			}
+			
+			path = TakeScreenshot("disabled");
+			
+			
+		} catch (Exception e) {
+			Log.error("Error" + e.getMessage());
+			path = TakeScreenshot("disabled");
+			builder.DisplayResult("Fail", sDescription, "Error" + e.getMessage(),path);
+			DriverScriptTest.bResult = false;
+			
+		}
+	}
+	
+	public static void verifyDropdownValue(String object, String data,String sDescription, ReportBuilder builder){
+		try {
+			Log.info("Selecting "+ data+ " from dropdown" );
+			Select dropdown = new Select(driver.findElement(By.xpath(OR.getProperty(object))));
+			String selectedValue = dropdown.getFirstSelectedOption().getText();
+			if(data.equals(selectedValue)){
+				builder.DisplayResult("Pass", sDescription, data+ " Value selected from dropdown",path);
+			}
+			else{
+				builder.DisplayResult("Fail", sDescription, "Different value selected in dropdown",path);
+			}
+			path = TakeScreenshot("dropdown");
+			
+			
+		} catch (Exception e) {
+			Log.error("Error --- " + e.getMessage());
+			path = TakeScreenshot("dropdown");
+			builder.DisplayResult("Fail", sDescription, "Error ---" + e.getMessage(),path);
+			DriverScriptTest.bResult = false;
+			
+		}
+	}
 
+	public static void verifyEnabled(String object, String data,String sDescription, ReportBuilder builder){
+		try {
+			Log.info("Verify " +object+ " enabled" );
+			WebElement element = driver.findElement(By.xpath(OR.getProperty(object)));
+			if("true" == element.getAttribute("readonly") || "true" == element.getAttribute("disabled")){
+			
+				builder.DisplayResult("Fail", sDescription, "Element is disabled",path);
+			}
+			else{
+				builder.DisplayResult("Pass", sDescription, "Enabled",path);
+			}
+			
+			path = TakeScreenshot("enabled");
+			
+			
+		} catch (Exception e) {
+			Log.error("Error" + e.getMessage());
+			path = TakeScreenshot("enabled");
+			builder.DisplayResult("Fail", sDescription, "Error" + e.getMessage(),path);
+			DriverScriptTest.bResult = false;
+			
+		}
+	}
 }

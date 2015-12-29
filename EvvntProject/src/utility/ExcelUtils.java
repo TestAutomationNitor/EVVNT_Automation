@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import config.Constants;
-import executionEngine.DriverScript;
+import test.java.DriverScriptTest;
 
 public class ExcelUtils {
 	private static XSSFSheet ExcelWSheet;
@@ -22,19 +22,28 @@ public class ExcelUtils {
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 		} catch (Exception e) {
 			Log.error("Class Utils | Method setExcelFile | Exception desc : " + e.getMessage());
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 		}
 	}
 
+	@SuppressWarnings("static-access")
 	public static String getCellData(int RowNum, int ColNum, String SheetName) throws Exception {
 		try {
 			ExcelWSheet = ExcelWBook.getSheet(SheetName);
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
-			String CellData = Cell.getStringCellValue();
+			 String CellData = "";
+				if(Cell.getCellType() == Cell.CELL_TYPE_NUMERIC) { 
+				int i = (int)Cell.getNumericCellValue(); 
+				CellData = String.valueOf(i); 
+				} else { 
+					CellData = Cell.getStringCellValue(); 
+				}
+					
+			//String CellData = Cell.getStringCellValue();
 			return CellData;
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getCellData | Exception desc : " + e.getMessage());
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 			return "";
 		}
 	}
@@ -46,7 +55,7 @@ public class ExcelUtils {
 			iNumber = ExcelWSheet.getLastRowNum() + 1;
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowCount | Exception desc : " + e.getMessage());
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 		}
 		return iNumber;
 	}
@@ -62,7 +71,7 @@ public class ExcelUtils {
 			}
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowContains | Exception desc : " + e.getMessage());
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 		}
 		return iRowNum;
 	}
@@ -80,7 +89,7 @@ public class ExcelUtils {
 			return number;
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowContains | Exception desc : " + e.getMessage());
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 			return 0;
 		}
 	}
@@ -103,7 +112,7 @@ public class ExcelUtils {
 			fileOut.close();
 			ExcelWBook = new XSSFWorkbook(new FileInputStream(System.getProperty("user.dir") + "\\src\\data_engine\\DataEngine.xlsx"));
 		} catch (Exception e) {
-			DriverScript.bResult = false;
+			DriverScriptTest.bResult = false;
 
 		}
 	}
