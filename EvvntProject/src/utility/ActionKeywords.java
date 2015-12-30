@@ -38,8 +38,7 @@ public class ActionKeywords {
 	public static WebDriver driver = null;
 	static WebDriverWait wait = null;
 	public static String path;
-	//static List<GalenTestInfo> test_collection = new LinkedList<GalenTestInfo>();
-
+	
 	public static void openBrowser(String object, String data, String sDescription, ReportBuilder builder) {
 		Log.info("Opening Browser");
 		try {
@@ -47,7 +46,7 @@ public class ActionKeywords {
 				driver = new FirefoxDriver();
 				
 				Log.info("Mozilla browser started");
-				path = TakeScreenshot("LaunchBrowser");
+				path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 				builder.DisplayResult("Pass", sDescription, "Mozilla browser started",path);
 			} else if (data.equals("IE")) {
 				System.setProperty("webdriver.chrome.driver",
@@ -55,7 +54,7 @@ public class ActionKeywords {
 				driver = new InternetExplorerDriver();
 				
 				Log.info("IE browser started");
-				path = TakeScreenshot("LaunchBrowser");
+				path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 				builder.DisplayResult("Pass", sDescription, "IE browser started",path);
 			} else if (data.equals("Chrome")) {
 				System.setProperty("webdriver.chrome.driver",
@@ -63,7 +62,7 @@ public class ActionKeywords {
 				driver = new ChromeDriver();
 				
 				Log.info("Chrome browser started");
-				path = TakeScreenshot("LaunchBrowser");
+				path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 				builder.DisplayResult("Pass", sDescription, "Chrome browser started",path);
 			}
 
@@ -74,7 +73,7 @@ public class ActionKeywords {
 			
 		} catch (Exception e) {
 			Log.info("Not able to open the Browser --- " + e.getMessage());
-			path = TakeScreenshot("LaunchBrowser");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", "Launch browser", "Not able to open the Browser --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -100,12 +99,12 @@ public class ActionKeywords {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.get(Constants.URL);
-			path = TakeScreenshot("Navigate");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Navigated to URL", path);
 			
 		} catch (Exception e) {
 			Log.info("Not able to navigate --- " + e.getMessage());
-			path = TakeScreenshot("Navigate");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to navigate --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			e.printStackTrace();
@@ -118,12 +117,12 @@ public class ActionKeywords {
 			Log.info("Clicking on Webelement " + object);
 			
 			driver.findElement(By.xpath(OR.getProperty(object))).click();
-			path = TakeScreenshot("Click");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Clicked",path);
 			
 		} catch (Exception e) {
 			Log.error("Not able to click --- " + e.getMessage());
-			path = TakeScreenshot("Click");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to click --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -138,12 +137,12 @@ public class ActionKeywords {
 			element.click();
 			element.clear();
 			element.sendKeys(data);
-			path = TakeScreenshot("Input");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Text entered",path);
 			
 		} catch (Exception e) {
 			Log.error("Not able to Enter text --- " + e.getMessage());
-			path = TakeScreenshot("Input");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to Enter text --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -155,12 +154,12 @@ public class ActionKeywords {
 			Log.info("Wait for 10 seconds");
 			
 			Thread.sleep(10000);
-			path = TakeScreenshot("Wait");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Test step passed",path);
-			TakeScreenshot("Wait");
+			
 		} catch (Exception e) {
 			Log.error("Not able to Wait --- " + e.getMessage());
-			path  = TakeScreenshot("Wait");
+			path  = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to Wait --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -172,12 +171,12 @@ public class ActionKeywords {
 			Log.info("Closing the browser");
 			
 			driver.close();
-			path = TakeScreenshot("closeBrowser");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Browser closed",path);
 		
 		} catch (Exception e) {
 			Log.error("Not able to Close the Browser --- " + e.getMessage());
-			path = TakeScreenshot("closeBrowser");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription,"Not able to Close the Browser --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 		}
@@ -190,12 +189,12 @@ public class ActionKeywords {
 			
 			wait = new WebDriverWait(driver, 50);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(object))));
-			path = TakeScreenshot("WaitForObject");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Test step passed",path);
 		
 		} catch (Exception e) {
 			Log.error("The element:" + object + "is not present");
-			path = TakeScreenshot("WaitForObject");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "The element:" + object + " is not present",path);
 			DriverScriptTest.bResult = false;
 			
@@ -229,11 +228,11 @@ public class ActionKeywords {
 			Log.info("Scroll Down Page");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("window.scrollBy(0,250)", "");
-		path = TakeScreenshot("scrollDown");
+		path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 		builder.DisplayResult("Pass", sDescription, "Test step passed",path);
 		} catch (Exception e) {
 			Log.error("Scroll Down error");
-			path = TakeScreenshot("scrollDown");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Scroll Down Failed",path);
 			e.printStackTrace();
 		}
@@ -244,12 +243,12 @@ public class ActionKeywords {
 			Log.info("Clicking on Webelement " + object);
 			
 			driver.findElement(By.name("commit")).click();
-			path = TakeScreenshot("Click");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Clicked",path);
 			
 		} catch (Exception e) {
 			Log.error("Not able to click --- " + e.getMessage());
-			path = TakeScreenshot("Click");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to click --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -261,12 +260,12 @@ public class ActionKeywords {
 			Log.info("Clicking on Enter " );
 			
 			driver.findElement(By.name(OR.getProperty(object))).sendKeys(Keys.ENTER);
-			path = TakeScreenshot("Enter");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Enter",path);
 			
 		} catch (Exception e) {
 			Log.error("Not able to press enter key --- " + e.getMessage());
-			path = TakeScreenshot("Click");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to press enter key --- " + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -278,12 +277,12 @@ public class ActionKeywords {
 			Log.info("Selecting "+ data+ " from dropdown" );
 			Select dropdown = new Select(driver.findElement(By.xpath(OR.getProperty(object))));
 			dropdown.selectByVisibleText(data);
-			path = TakeScreenshot("dropdown");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Pass", sDescription, "Value selected from dropdown",path);
 			
 		} catch (Exception e) {
 			Log.error("Not able to select value from drop down --- " + e.getMessage());
-			path = TakeScreenshot("dropdown");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Not able to select value from drop down ---" + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -302,12 +301,12 @@ public class ActionKeywords {
 				builder.DisplayResult("Pass", sDescription, "Disabled",path);
 			}
 			
-			path = TakeScreenshot("disabled");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			
 			
 		} catch (Exception e) {
 			Log.error("Error" + e.getMessage());
-			path = TakeScreenshot("disabled");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Error" + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -325,12 +324,12 @@ public class ActionKeywords {
 			else{
 				builder.DisplayResult("Fail", sDescription, "Different value selected in dropdown",path);
 			}
-			path = TakeScreenshot("dropdown");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			
 			
 		} catch (Exception e) {
 			Log.error("Error --- " + e.getMessage());
-			path = TakeScreenshot("dropdown");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Error ---" + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			
@@ -349,12 +348,12 @@ public class ActionKeywords {
 				builder.DisplayResult("Pass", sDescription, "Enabled",path);
 			}
 			
-			path = TakeScreenshot("enabled");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			
 			
 		} catch (Exception e) {
 			Log.error("Error" + e.getMessage());
-			path = TakeScreenshot("enabled");
+			path = TakeScreenshot(DriverScriptTest.sTestCaseID+"_StepId_"+DriverScriptTest.sTestStepId);
 			builder.DisplayResult("Fail", sDescription, "Error" + e.getMessage(),path);
 			DriverScriptTest.bResult = false;
 			

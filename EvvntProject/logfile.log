@@ -9671,3 +9671,379 @@ Driver info: driver.version: RemoteWebDriver
 2015-12-29 19:46:39,088 INFO  [Log] X 
 2015-12-29 19:46:39,088 INFO  [Log] X 
 2015-12-29 19:46:39,088 INFO  [Log] X 
+2015-12-30 11:46:06,471 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:46:06,521 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:46:06,521 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC01_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 11:46:06,521 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:46:06,521 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:46:06,521 INFO  [Log] Opening Browser 
+2015-12-30 11:46:17,163 INFO  [Log] Mozilla browser started 
+2015-12-30 11:46:17,822 INFO  [Log] Navigating to URL 
+2015-12-30 11:47:03,827 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 11:47:04,858 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 11:47:05,224 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 11:47:20,518 INFO  [Log] Wait for object 
+2015-12-30 11:47:20,790 INFO  [Log] Closing the browser 
+2015-12-30 11:47:21,146 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 11:47:21,146 INFO  [Log] X 
+2015-12-30 11:47:21,146 INFO  [Log] X 
+2015-12-30 11:47:21,146 INFO  [Log] X 
+2015-12-30 11:47:21,146 INFO  [Log] X 
+2015-12-30 11:47:21,171 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:47:21,171 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:47:21,171 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC02_CreateNewAccount       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 11:47:21,171 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:47:21,171 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:47:21,173 INFO  [Log] Opening Browser 
+2015-12-30 11:47:35,010 INFO  [Log] Mozilla browser started 
+2015-12-30 11:47:35,160 INFO  [Log] Navigating to URL 
+2015-12-30 11:47:50,011 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 11:47:50,898 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 11:47:51,214 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 11:47:58,250 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 11:47:58,665 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 11:48:00,991 INFO  [Log] Wait for object 
+2015-12-30 11:48:01,246 INFO  [Log] Clicking on Webelement newaccount_button 
+2015-12-30 11:48:08,018 INFO  [Log] Entering the text in account_Name 
+2015-12-30 11:48:08,514 INFO  [Log] Entering the text in account_Address 
+2015-12-30 11:48:09,082 INFO  [Log] Entering the text in account_town 
+2015-12-30 11:48:09,640 INFO  [Log] Scroll Down Page 
+2015-12-30 11:48:09,872 INFO  [Log] Clicking on Webelement country_drop_down 
+2015-12-30 11:48:10,716 INFO  [Log] Entering the text in country_drop_down_inputBox 
+2015-12-30 11:48:11,396 INFO  [Log] Clicking on Webelement country_contact_result 
+2015-12-30 11:48:11,882 INFO  [Log] Scroll Down Page 
+2015-12-30 11:48:12,102 INFO  [Log] Entering the text in contacts_name 
+2015-12-30 11:48:12,625 INFO  [Log] Entering the text in contacts_email 
+2015-12-30 11:48:13,061 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 11:48:27,749 INFO  [Log] Wait for object 
+2015-12-30 11:48:27,945 INFO  [Log] Closing the browser 
+2015-12-30 11:48:28,199 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 11:48:28,199 INFO  [Log] X 
+2015-12-30 11:48:28,199 INFO  [Log] X 
+2015-12-30 11:48:28,199 INFO  [Log] X 
+2015-12-30 11:48:28,199 INFO  [Log] X 
+2015-12-30 11:48:28,226 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:48:28,226 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:48:28,226 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC03_CreatePackage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 11:48:28,226 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:48:28,226 INFO  [Log] **************************************************************************************** 
+2015-12-30 11:48:28,229 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-30 11:48:28,229 INFO  [Log] Opening Browser 
+2015-12-30 11:48:34,245 INFO  [Log] Mozilla browser started 
+2015-12-30 11:48:34,359 INFO  [Log] Navigating to URL 
+2015-12-30 11:48:48,669 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 11:48:49,476 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 11:48:49,794 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 11:48:57,695 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 11:48:57,973 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 11:49:00,954 INFO  [Log] Entering the text in filterby_name 
+2015-12-30 11:49:01,353 INFO  [Log] Clicking on Webelement search 
+2015-12-30 11:49:04,489 INFO  [Log] Clicking on Webelement search_result 
+2015-12-30 11:49:06,572 INFO  [Log] Clicking on Webelement packages 
+2015-12-30 11:49:06,795 INFO  [Log] Clicking on Webelement newpackage_button 
+2015-12-30 11:49:17,414 INFO  [Log] Wait for object 
+2015-12-30 11:49:17,690 INFO  [Log] Clicking on Webelement drop_down 
+2015-12-30 11:49:18,390 INFO  [Log] Entering the text in drop_down_inputBox 
+2015-12-30 11:49:19,005 INFO  [Log] Clicking on Webelement contact_result 
+2015-12-30 11:49:19,414 INFO  [Log] Selecting Pay-As-You-Go from dropdown 
+2015-12-30 11:49:20,119 INFO  [Log] Verify event_quantity disabled 
+2015-12-30 11:49:20,360 INFO  [Log] Verify event_quantity_remaining disabled 
+2015-12-30 11:49:20,623 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 11:49:20,912 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 11:49:21,379 INFO  [Log] Verify replenish_date disabled 
+2015-12-30 11:49:21,620 INFO  [Log] Verify replenish_cycle disabled 
+2015-12-30 11:49:21,905 INFO  [Log] Verify payment_term disabled 
+2015-12-30 11:49:22,163 INFO  [Log] Selecting Subscription from dropdown 
+2015-12-30 11:49:22,650 INFO  [Log] Verify replenish_date enabled 
+2015-12-30 11:49:22,934 INFO  [Log] Verify replenish_cycle enabled 
+2015-12-30 11:49:23,259 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 11:49:24,041 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 11:49:24,385 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 11:49:25,052 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 11:49:25,327 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 11:49:26,032 INFO  [Log] Entering the text in cost_per_event 
+2015-12-30 11:49:26,656 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 11:49:27,342 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 11:49:27,638 INFO  [Log] Wait for object 
+2015-12-30 11:49:27,912 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 11:49:28,557 INFO  [Log] Verify payment_term enabled 
+2015-12-30 11:49:28,820 INFO  [Log] Entering the text in purchase_order_no 
+2015-12-30 11:49:29,483 INFO  [Log] Selecting 1 week from dropdown 
+2015-12-30 11:49:30,259 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 11:49:30,986 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 11:49:31,702 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 11:49:32,456 INFO  [Log] Selecting 7 days from dropdown 
+2015-12-30 11:49:33,160 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 11:49:35,795 INFO  [Log] Wait for object 
+2015-12-30 11:49:35,959 INFO  [Log] Closing the browser 
+2015-12-30 11:49:36,142 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 11:49:36,142 INFO  [Log] X 
+2015-12-30 11:49:36,142 INFO  [Log] X 
+2015-12-30 11:49:36,142 INFO  [Log] X 
+2015-12-30 11:49:36,142 INFO  [Log] X 
+2015-12-30 12:47:34,544 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:47:34,564 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:47:34,564 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC01_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 12:47:34,564 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:47:34,564 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:47:34,564 INFO  [Log] Opening Browser 
+2015-12-30 12:47:40,816 INFO  [Log] Mozilla browser started 
+2015-12-30 12:47:41,614 INFO  [Log] Navigating to URL 
+2015-12-30 12:47:57,322 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 12:47:58,483 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 12:47:58,857 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 12:48:05,549 INFO  [Log] Wait for object 
+2015-12-30 12:48:05,798 INFO  [Log] Closing the browser 
+2015-12-30 12:48:06,142 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 12:48:06,142 INFO  [Log] X 
+2015-12-30 12:48:06,143 INFO  [Log] X 
+2015-12-30 12:48:06,143 INFO  [Log] X 
+2015-12-30 12:48:06,143 INFO  [Log] X 
+2015-12-30 12:48:06,167 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:48:06,167 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:48:06,167 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC02_CreateNewAccount       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 12:48:06,167 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:48:06,167 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:48:06,169 INFO  [Log] Opening Browser 
+2015-12-30 12:48:12,743 INFO  [Log] Mozilla browser started 
+2015-12-30 12:48:12,922 INFO  [Log] Navigating to URL 
+2015-12-30 12:48:27,314 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 12:48:30,871 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 12:48:31,316 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 12:48:37,695 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 12:48:37,997 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 12:48:39,768 INFO  [Log] Wait for object 
+2015-12-30 12:48:40,051 INFO  [Log] Clicking on Webelement newaccount_button 
+2015-12-30 12:48:47,892 INFO  [Log] Entering the text in account_Name 
+2015-12-30 12:48:48,412 INFO  [Log] Entering the text in account_Address 
+2015-12-30 12:48:48,942 INFO  [Log] Entering the text in account_town 
+2015-12-30 12:48:49,472 INFO  [Log] Scroll Down Page 
+2015-12-30 12:48:49,679 INFO  [Log] Clicking on Webelement country_drop_down 
+2015-12-30 12:48:50,597 INFO  [Log] Entering the text in country_drop_down_inputBox 
+2015-12-30 12:48:51,365 INFO  [Log] Clicking on Webelement country_contact_result 
+2015-12-30 12:48:51,743 INFO  [Log] Scroll Down Page 
+2015-12-30 12:48:51,962 INFO  [Log] Entering the text in contacts_name 
+2015-12-30 12:48:52,455 INFO  [Log] Entering the text in contacts_email 
+2015-12-30 12:48:52,907 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 12:48:57,003 INFO  [Log] Wait for object 
+2015-12-30 12:49:49,515 ERROR [Log] The element:account_created_alertis not present 
+2015-12-30 12:49:49,757 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 12:49:49,757 INFO  [Log] X 
+2015-12-30 12:49:49,757 INFO  [Log] X 
+2015-12-30 12:49:49,757 INFO  [Log] X 
+2015-12-30 12:49:49,757 INFO  [Log] X 
+2015-12-30 12:49:49,766 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:49:49,766 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:49:49,766 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC03_CreatePackage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 12:49:49,766 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:49:49,766 INFO  [Log] **************************************************************************************** 
+2015-12-30 12:49:49,769 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-30 12:49:49,769 INFO  [Log] Opening Browser 
+2015-12-30 12:49:55,792 INFO  [Log] Mozilla browser started 
+2015-12-30 12:49:55,948 INFO  [Log] Navigating to URL 
+2015-12-30 12:50:11,110 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 12:50:16,005 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 12:50:16,479 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 12:50:23,243 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 12:50:23,563 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 12:50:25,304 INFO  [Log] Entering the text in filterby_name 
+2015-12-30 12:50:26,032 INFO  [Log] Clicking on Webelement search 
+2015-12-30 12:50:29,346 INFO  [Log] Clicking on Webelement search_result 
+2015-12-30 12:50:33,644 INFO  [Log] Clicking on Webelement packages 
+2015-12-30 12:50:35,893 INFO  [Log] Clicking on Webelement newpackage_button 
+2015-12-30 12:50:42,675 INFO  [Log] Wait for object 
+2015-12-30 12:50:42,997 INFO  [Log] Clicking on Webelement drop_down 
+2015-12-30 12:50:43,784 INFO  [Log] Entering the text in drop_down_inputBox 
+2015-12-30 12:50:44,510 INFO  [Log] Clicking on Webelement contact_result 
+2015-12-30 12:50:44,986 INFO  [Log] Selecting Pay-As-You-Go from dropdown 
+2015-12-30 12:50:46,094 INFO  [Log] Verify event_quantity disabled 
+2015-12-30 12:50:46,362 INFO  [Log] Verify event_quantity_remaining disabled 
+2015-12-30 12:50:46,664 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 12:50:46,978 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 12:50:47,532 INFO  [Log] Verify replenish_date disabled 
+2015-12-30 12:50:47,794 INFO  [Log] Verify replenish_cycle disabled 
+2015-12-30 12:50:48,049 INFO  [Log] Verify payment_term disabled 
+2015-12-30 12:50:48,326 INFO  [Log] Selecting Subscription from dropdown 
+2015-12-30 12:50:48,811 INFO  [Log] Verify replenish_date enabled 
+2015-12-30 12:50:49,056 INFO  [Log] Verify replenish_cycle enabled 
+2015-12-30 12:50:49,314 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 12:50:49,975 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 12:50:50,362 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 12:50:51,112 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 12:50:51,495 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 12:50:52,155 INFO  [Log] Entering the text in cost_per_event 
+2015-12-30 12:50:52,860 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 12:50:53,581 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 12:50:53,911 INFO  [Log] Wait for object 
+2015-12-30 12:50:54,194 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 12:50:55,003 INFO  [Log] Verify payment_term enabled 
+2015-12-30 12:50:55,271 INFO  [Log] Entering the text in purchase_order_no 
+2015-12-30 12:50:55,912 INFO  [Log] Selecting 1 week from dropdown 
+2015-12-30 12:50:56,620 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 12:50:57,385 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 12:50:57,994 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 12:50:58,786 INFO  [Log] Selecting 7 days from dropdown 
+2015-12-30 12:50:59,506 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 12:51:03,277 INFO  [Log] Wait for object 
+2015-12-30 12:51:03,434 INFO  [Log] Closing the browser 
+2015-12-30 12:51:03,618 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 12:51:03,618 INFO  [Log] X 
+2015-12-30 12:51:03,618 INFO  [Log] X 
+2015-12-30 12:51:03,618 INFO  [Log] X 
+2015-12-30 12:51:03,618 INFO  [Log] X 
+2015-12-30 16:43:36,418 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:43:36,430 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:43:36,430 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC01_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 16:43:36,430 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:43:36,431 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:43:36,436 INFO  [Log] Opening Browser 
+2015-12-30 16:43:42,022 INFO  [Log] Mozilla browser started 
+2015-12-30 16:43:42,805 INFO  [Log] Navigating to URL 
+2015-12-30 16:44:27,540 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 16:44:28,732 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 16:44:29,074 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 16:44:38,380 INFO  [Log] Wait for object 
+2015-12-30 16:44:38,630 INFO  [Log] Closing the browser 
+2015-12-30 16:44:38,978 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 16:44:38,978 INFO  [Log] X 
+2015-12-30 16:44:38,978 INFO  [Log] X 
+2015-12-30 16:44:38,978 INFO  [Log] X 
+2015-12-30 16:44:38,978 INFO  [Log] X 
+2015-12-30 16:44:39,003 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:44:39,003 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:44:39,003 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC02_CreateNewAccount       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 16:44:39,003 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:44:39,003 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:44:39,005 INFO  [Log] Opening Browser 
+2015-12-30 16:44:44,606 INFO  [Log] Mozilla browser started 
+2015-12-30 16:44:44,796 INFO  [Log] Navigating to URL 
+2015-12-30 16:45:04,829 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 16:45:05,691 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 16:45:05,994 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 16:45:13,273 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 16:45:13,567 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 16:45:16,075 INFO  [Log] Wait for object 
+2015-12-30 16:45:16,324 INFO  [Log] Clicking on Webelement newaccount_button 
+2015-12-30 16:45:26,999 INFO  [Log] Entering the text in account_Name 
+2015-12-30 16:45:27,542 INFO  [Log] Entering the text in account_Address 
+2015-12-30 16:45:28,057 INFO  [Log] Entering the text in account_town 
+2015-12-30 16:45:28,526 INFO  [Log] Scroll Down Page 
+2015-12-30 16:45:28,732 INFO  [Log] Clicking on Webelement country_drop_down 
+2015-12-30 16:45:29,578 INFO  [Log] Entering the text in country_drop_down_inputBox 
+2015-12-30 16:45:30,204 INFO  [Log] Clicking on Webelement country_contact_result 
+2015-12-30 16:45:30,520 INFO  [Log] Scroll Down Page 
+2015-12-30 16:45:30,709 INFO  [Log] Entering the text in contacts_name 
+2015-12-30 16:45:31,168 INFO  [Log] Entering the text in contacts_email 
+2015-12-30 16:45:31,587 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 16:45:37,336 INFO  [Log] Wait for object 
+2015-12-30 16:46:13,923 ERROR [Log] The element:account_created_alertis not present 
+2015-12-30 16:47:53,312 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:47:53,312 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:47:53,312 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC01_Login       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 16:47:53,312 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:47:53,312 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:47:53,320 INFO  [Log] Opening Browser 
+2015-12-30 16:47:58,343 INFO  [Log] Mozilla browser started 
+2015-12-30 16:47:58,860 INFO  [Log] Navigating to URL 
+2015-12-30 16:48:14,708 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 16:48:15,832 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 16:48:16,202 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 16:48:24,356 INFO  [Log] Wait for object 
+2015-12-30 16:48:24,607 INFO  [Log] Closing the browser 
+2015-12-30 16:48:24,977 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 16:48:24,977 INFO  [Log] X 
+2015-12-30 16:48:24,977 INFO  [Log] X 
+2015-12-30 16:48:24,977 INFO  [Log] X 
+2015-12-30 16:48:24,977 INFO  [Log] X 
+2015-12-30 16:48:25,005 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:48:25,005 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:48:25,005 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC02_CreateNewAccount       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 16:48:25,006 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:48:25,006 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:48:25,008 INFO  [Log] Opening Browser 
+2015-12-30 16:48:29,495 INFO  [Log] Mozilla browser started 
+2015-12-30 16:48:29,722 INFO  [Log] Navigating to URL 
+2015-12-30 16:48:43,581 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 16:48:44,705 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 16:48:45,015 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 16:48:53,977 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 16:48:54,286 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 16:48:56,411 INFO  [Log] Wait for object 
+2015-12-30 16:48:56,669 INFO  [Log] Clicking on Webelement newaccount_button 
+2015-12-30 16:49:03,957 INFO  [Log] Entering the text in account_Name 
+2015-12-30 16:49:04,408 INFO  [Log] Entering the text in account_Address 
+2015-12-30 16:49:04,897 INFO  [Log] Entering the text in account_town 
+2015-12-30 16:49:05,376 INFO  [Log] Scroll Down Page 
+2015-12-30 16:49:05,668 INFO  [Log] Clicking on Webelement country_drop_down 
+2015-12-30 16:49:06,551 INFO  [Log] Entering the text in country_drop_down_inputBox 
+2015-12-30 16:49:07,202 INFO  [Log] Clicking on Webelement country_contact_result 
+2015-12-30 16:49:07,522 INFO  [Log] Scroll Down Page 
+2015-12-30 16:49:07,728 INFO  [Log] Entering the text in contacts_name 
+2015-12-30 16:49:08,190 INFO  [Log] Entering the text in contacts_email 
+2015-12-30 16:49:08,693 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 16:49:12,475 INFO  [Log] Wait for object 
+2015-12-30 16:49:12,733 INFO  [Log] Closing the browser 
+2015-12-30 16:49:13,034 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 16:49:13,034 INFO  [Log] X 
+2015-12-30 16:49:13,034 INFO  [Log] X 
+2015-12-30 16:49:13,034 INFO  [Log] X 
+2015-12-30 16:49:13,034 INFO  [Log] X 
+2015-12-30 16:49:13,047 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:49:13,047 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:49:13,047 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC03_CreatePackage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2015-12-30 16:49:13,047 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:49:13,047 INFO  [Log] **************************************************************************************** 
+2015-12-30 16:49:13,050 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2015-12-30 16:49:13,050 INFO  [Log] Opening Browser 
+2015-12-30 16:49:18,077 INFO  [Log] Mozilla browser started 
+2015-12-30 16:49:18,344 INFO  [Log] Navigating to URL 
+2015-12-30 16:49:32,919 INFO  [Log] Entering the text in txtbx_UserName 
+2015-12-30 16:49:33,696 INFO  [Log] Entering the text in txtbx_Password 
+2015-12-30 16:49:33,999 INFO  [Log] Clicking on Webelement Btn_LogIn 
+2015-12-30 16:49:41,495 INFO  [Log] Clicking on Webelement customer_menu 
+2015-12-30 16:49:41,777 INFO  [Log] Clicking on Webelement accounts_button 
+2015-12-30 16:49:44,035 INFO  [Log] Entering the text in filterby_name 
+2015-12-30 16:49:44,470 INFO  [Log] Clicking on Webelement search 
+2015-12-30 16:49:46,885 INFO  [Log] Clicking on Webelement search_result 
+2015-12-30 16:49:48,755 INFO  [Log] Clicking on Webelement packages 
+2015-12-30 16:49:49,014 INFO  [Log] Clicking on Webelement newpackage_button 
+2015-12-30 16:49:57,456 INFO  [Log] Wait for object 
+2015-12-30 16:49:57,732 INFO  [Log] Clicking on Webelement drop_down 
+2015-12-30 16:49:58,424 INFO  [Log] Entering the text in drop_down_inputBox 
+2015-12-30 16:49:59,050 INFO  [Log] Clicking on Webelement contact_result 
+2015-12-30 16:49:59,507 INFO  [Log] Selecting Pay-As-You-Go from dropdown 
+2015-12-30 16:50:00,222 INFO  [Log] Verify event_quantity disabled 
+2015-12-30 16:50:00,477 INFO  [Log] Verify event_quantity_remaining disabled 
+2015-12-30 16:50:00,738 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 16:50:01,067 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 16:50:01,537 INFO  [Log] Verify replenish_date disabled 
+2015-12-30 16:50:01,785 INFO  [Log] Verify replenish_cycle disabled 
+2015-12-30 16:50:02,029 INFO  [Log] Verify payment_term disabled 
+2015-12-30 16:50:02,288 INFO  [Log] Selecting Subscription from dropdown 
+2015-12-30 16:50:02,778 INFO  [Log] Verify replenish_date enabled 
+2015-12-30 16:50:03,079 INFO  [Log] Verify replenish_cycle enabled 
+2015-12-30 16:50:03,400 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 16:50:04,159 INFO  [Log] Selecting 40 from dropdown 
+2015-12-30 16:50:04,483 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 16:50:05,181 INFO  [Log] Selecting Local from dropdown 
+2015-12-30 16:50:05,464 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 16:50:06,103 INFO  [Log] Entering the text in cost_per_event 
+2015-12-30 16:50:06,749 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 16:50:07,441 INFO  [Log] Selecting GBP from dropdown 
+2015-12-30 16:50:07,740 INFO  [Log] Wait for object 
+2015-12-30 16:50:08,048 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 16:50:08,779 INFO  [Log] Verify payment_term enabled 
+2015-12-30 16:50:09,024 INFO  [Log] Entering the text in purchase_order_no 
+2015-12-30 16:50:09,739 INFO  [Log] Selecting 1 week from dropdown 
+2015-12-30 16:50:10,610 INFO  [Log] Selecting Single/Bundle from dropdown 
+2015-12-30 16:50:11,352 INFO  [Log] Entering the text in event_quantity 
+2015-12-30 16:50:12,005 INFO  [Log] Selecting Bank Account from dropdown 
+2015-12-30 16:50:12,795 INFO  [Log] Selecting 7 days from dropdown 
+2015-12-30 16:50:13,519 INFO  [Log] Clicking on Webelement create_account  
+2015-12-30 16:50:21,790 INFO  [Log] Wait for object 
+2015-12-30 16:50:21,942 INFO  [Log] Closing the browser 
+2015-12-30 16:50:22,123 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2015-12-30 16:50:22,123 INFO  [Log] X 
+2015-12-30 16:50:22,123 INFO  [Log] X 
+2015-12-30 16:50:22,123 INFO  [Log] X 
+2015-12-30 16:50:22,123 INFO  [Log] X 

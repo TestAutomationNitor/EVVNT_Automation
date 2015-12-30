@@ -27,6 +27,7 @@ public class DriverScriptTest {
 	public static String sData;
 	public static boolean bResult;
 	public static String sDescription;
+	public static String sTestStepId;
 	public static ReportBuilder builder;
 
 	@BeforeMethod
@@ -77,7 +78,7 @@ public class DriverScriptTest {
 							Constants.Sheet_TestSteps);
 					sData = ExcelUtils.getCellData(iTestStep, Constants.Col_DataSet, Constants.Sheet_TestSteps);
 					sDescription =  ExcelUtils.getCellData(iTestStep, Constants.Col_TestStepDescription, Constants.Sheet_TestSteps);
-
+					sTestStepId = ExcelUtils.getCellData(iTestStep, Constants.Col_TestDescID, Constants.Sheet_TestSteps);
 					execute_Actions();
 					if (bResult == false) {
 						ExcelUtils.setCellData(Constants.KEYWORD_FAIL, iTestcase, Constants.Col_Result,
